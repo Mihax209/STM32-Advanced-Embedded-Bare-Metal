@@ -1,5 +1,4 @@
 #include "uart.h"
-#include <stddef.h>
 
 #define CLK             (16000000u)
 #define UART_BUADRATE   (115200)
