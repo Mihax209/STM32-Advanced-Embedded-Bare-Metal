@@ -64,7 +64,7 @@ bool DMA_is_transfer_complete(void) {
     return g_transfer_complete;
 }
 
-void DMA2_Stream0_IRQHandler_yeet(void) {
+void DMA2_Stream0_IRQHandler(void) {
     if (DMA2->LISR & DMA_LISR_TCIF0_Msk) {
         g_transfer_complete = true;
         DMA2->LIFCR |= DMA_LIFCR_CTCIF0;
