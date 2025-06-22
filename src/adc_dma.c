@@ -56,11 +56,11 @@ void ADC_init(void) {
     /* Configure DMA parameters */
     /* 16 bit memory size */
     DMA2_Stream4->CR &= ~DMA_SxCR_MSIZE_Msk;
-    DMA2_Stream4->CR |= DMA_SxCR_MSIZE_1;
+    DMA2_Stream4->CR |= DMA_SxCR_MSIZE_0;
 
     /* PSIZE 16 bit */
     DMA2_Stream4->CR &= ~DMA_SxCR_PSIZE_Msk;
-    DMA2_Stream4->CR |= DMA_SxCR_PSIZE_1;
+    DMA2_Stream4->CR |= DMA_SxCR_PSIZE_0;
 
     /* Pointer INC */
     DMA2_Stream4->CR |= DMA_SxCR_MINC;
