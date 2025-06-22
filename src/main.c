@@ -4,6 +4,7 @@
 #include "uart.h"
 #include "gpio_key.h"
 #include "dma.h"
+#include "adc_dma.h"
 
 void init(void) {
     UART_init();
@@ -17,7 +18,7 @@ int main() {
     init();
 
     while (1) { 
-        ADC_print_values();
         for (int i = 0; i < 0xB0000; ++i) { }
+        ADC_print_values();
     }
 }

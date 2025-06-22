@@ -74,7 +74,7 @@ void ADC_init(void) {
     DMA2_Stream4->NDTR = (uint16_t)NUM_OF_CHANNELS;
 
     /* Enable dma stream */
-    DMA2_Stream0->CR |= DMA_SxCR_EN;
+    DMA2_Stream4->CR |= DMA_SxCR_EN;
 
     /***************** Start ADC *****************/
     /* Enable ADC */
